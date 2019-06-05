@@ -23,7 +23,16 @@ const template = (
     {getOptions(book.options)}
   </div>
 );
-
+let count = 0;
+const addOne = ()=>{
+  console.log('addOne');
+}
+const template2 = (
+  <div>
+    <h1>Count: {count}</h1>
+    <button onClick={addOne} id="my-id" className="button">+1 </button>
+  </div>
+);
 var practiceRoot = document.getElementById("app");
 
-ReactDOM.render(template, practiceRoot);
+ReactDOM.render(template2, practiceRoot);

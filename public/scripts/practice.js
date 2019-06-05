@@ -42,7 +42,25 @@ var template = React.createElement(
   getSubtitle(book.Subtitle),
   getOptions(book.options)
 );
-
+var count = 0;
+var addOne = function addOne() {
+  console.log('addOne');
+};
+var template2 = React.createElement(
+  "div",
+  null,
+  React.createElement(
+    "h1",
+    null,
+    "Count: ",
+    count
+  ),
+  React.createElement(
+    "button",
+    { onClick: addOne, id: "my-id", className: "button" },
+    "+1 "
+  )
+);
 var practiceRoot = document.getElementById("app");
 
-ReactDOM.render(template, practiceRoot);
+ReactDOM.render(template2, practiceRoot);
