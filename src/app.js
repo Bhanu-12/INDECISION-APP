@@ -19,7 +19,7 @@ const renderFunction = () => {
       <h1>{app.title}</h1>
       {app.subtitle && <p>app.subtitle</p>}
       <p>{app.options.length > 0 ? "Here are your OPtions" : "No options"}</p>
-      <p>{app.options.length}</p>  
+      <p>{app.options.length}</p>
       <button
         onClick={() => {
           app.options = [];
@@ -28,6 +28,13 @@ const renderFunction = () => {
       >
         Remove All
       </button>
+
+      <ol>
+        {app.options.map(option => {
+          return <li key={option}>Option: {option}</li>;
+        })}
+      </ol>
+
       <form onSubmit={onFormSubmit}>
         <input type="text" name="option" />
         <button>Add option</button>

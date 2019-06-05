@@ -50,6 +50,18 @@ var renderFunction = function renderFunction() {
       "Remove All"
     ),
     React.createElement(
+      "ol",
+      null,
+      app.options.map(function (option) {
+        return React.createElement(
+          "li",
+          { key: option },
+          "Option: ",
+          option
+        );
+      })
+    ),
+    React.createElement(
       "form",
       { onSubmit: onFormSubmit },
       React.createElement("input", { type: "text", name: "option" }),
