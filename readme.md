@@ -20,3 +20,7 @@ babel inpFileName --out-file=OutputFileName --presets=env,react --watch
 
 - JSX does not have manual data bindng.
 - Solve it by creating a function.
+
+## Arrays in JSX
+- To display array use map like array.map(name()=>{});
+
