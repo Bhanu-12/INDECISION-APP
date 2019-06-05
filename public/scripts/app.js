@@ -15,6 +15,13 @@ var onFormSubmit = function onFormSubmit(e) {
     renderFunction();
   }
 };
+
+var onMakeDecison = function onMakeDecison() {
+  var randomNum = Math.floor(Math.random() * app.options.length);
+  var option = app.options[randomNum];
+  alert(option);
+};
+
 var renderFunction = function renderFunction() {
   var template = React.createElement(
     "div",
@@ -48,6 +55,11 @@ var renderFunction = function renderFunction() {
         }
       },
       "Remove All"
+    ),
+    React.createElement(
+      "button",
+      { disabled: app.options.length === 0, onClick: onMakeDecison },
+      "What should I do."
     ),
     React.createElement(
       "ol",

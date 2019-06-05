@@ -13,6 +13,13 @@ const onFormSubmit = e => {
     renderFunction();
   }
 };
+
+const onMakeDecison = () => {
+  const randomNum = Math.floor(Math.random() * app.options.length);
+  const option = app.options[randomNum];
+  alert(option);
+};
+
 const renderFunction = () => {
   const template = (
     <div>
@@ -28,7 +35,9 @@ const renderFunction = () => {
       >
         Remove All
       </button>
-
+      <button disabled={app.options.length === 0} onClick={onMakeDecison}>
+        What should I do.
+      </button>
       <ol>
         {app.options.map(option => {
           return <li key={option}>Option: {option}</li>;
