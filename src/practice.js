@@ -1,5 +1,5 @@
 console.log("App.js is running");
-var book = {
+const book = {
   title: "The Song Of Ice ANd Fire",
   Subtitle: "Robert's Rebellion",
   options: ['One','Two']
@@ -16,7 +16,7 @@ let getOptions = (options)=>{
     return <p>There are no options</p>
   }
 };
-var template = (
+const template = (
   <div>
     <h1>{book.title}</h1>
     {getSubtitle(book.Subtitle)}
