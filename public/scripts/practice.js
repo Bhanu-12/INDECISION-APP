@@ -4,7 +4,7 @@ console.log("App.js is running");
 var book = {
   title: "The Song Of Ice ANd Fire",
   Subtitle: "Robert's Rebellion",
-  options: ['One', 'Two']
+  options: ["One", "Two"]
 };
 var getSubtitle = function getSubtitle(Subtitle) {
   if (Subtitle) {
@@ -43,24 +43,43 @@ var template = React.createElement(
   getOptions(book.options)
 );
 var count = 0;
+
 var addOne = function addOne() {
-  console.log('addOne');
+  count++;
+  renderCounterApp();
 };
-var template2 = React.createElement(
-  "div",
-  null,
-  React.createElement(
-    "h1",
-    null,
-    "Count: ",
-    count
-  ),
-  React.createElement(
-    "button",
-    { onClick: addOne, id: "my-id", className: "button" },
-    "+1 "
-  )
-);
+
 var practiceRoot = document.getElementById("app");
 
-ReactDOM.render(template2, practiceRoot);
+var renderCounterApp = function renderCounterApp() {
+  var template2 = React.createElement(
+    "div",
+    null,
+    React.createElement(
+      "h1",
+      null,
+      "Count: ",
+      count
+    ),
+    React.createElement(
+      "button",
+      { onClick: addOne },
+      " +1 "
+    ),
+    React.createElement(
+      "button",
+      {
+        onClick: function onClick() {
+          count--;
+          renderCounterApp();
+        }
+      },
+      " ",
+      "-1",
+      " "
+    )
+  );
+
+  ReactDOM.render(template2, practiceRoot);
+};
+renderCounterApp();
