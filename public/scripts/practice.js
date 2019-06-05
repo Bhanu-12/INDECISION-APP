@@ -1,27 +1,25 @@
 "use strict";
 
 console.log("App.js is running");
-
-var template = function template() {
-  React.createElement(
-    "div",
-    null,
-    React.createElement(
-      "h1",
-      null,
-      "hello"
-    ),
-    React.createElement(
-      "ol",
-      null,
-      React.createElement(
-        "li",
-        null,
-        "lets see"
-      )
-    )
-  );
+var book = {
+  title: "The Song Of Ice ANd Fire",
+  Subtitle: "Robert's Rebellion"
 };
+var template = React.createElement(
+  "div",
+  null,
+  React.createElement(
+    "h1",
+    null,
+    book.title
+  ),
+  React.createElement(
+    "p",
+    null,
+    book.Subtitle
+  )
+);
+
 var practiceRoot = document.getElementById("app");
 
 ReactDOM.render(template, practiceRoot);
