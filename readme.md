@@ -28,3 +28,10 @@ babel inpFileName --out-file=OutputFileName --presets=env,react --watch
 ## Classes
 - tu create a child class in js use class **childname extends parentname**.
 - In the constructor use super(arguments).
+
+## React Component State
+1. Setup default state object.
+2. Component state based on event.
+3. Change state based on event
+4. Component re-rendered using new state values.
+5. Start again at 3.
