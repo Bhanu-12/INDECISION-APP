@@ -37,3 +37,5 @@ babel inpFileName --out-file=OutputFileName --presets=env,react --watch
 5. Start again at 3.
 
 
+## Props And State
+![props](https://user-images.githubusercontent.com/42304018/59069529-0aac8200-88d5-11e9-9053-621e6623c9e2.jpeg)
