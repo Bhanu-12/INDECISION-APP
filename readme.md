@@ -35,3 +35,11 @@ babel inpFileName --out-file=OutputFileName --presets=env,react --watch
 3. Change state based on event
 4. Component re-rendered using new state values.
 5. Start again at 3.
+
+## PROPS and STATE
+[](https://postimg.cc/Lqk5h9nJ)
+- Both are an object.
+- both can be used when rendering.
+- changes can cause re-renders in both.
+- Props comes from above while state defined in component itself.
+- Can't be changed by component itself.
