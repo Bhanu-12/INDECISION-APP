@@ -26,5 +26,5 @@ babel inpFileName --out-file=OutputFileName --presets=env,react --watch
 - To display array use map like array.map(name()=>{});
 
 ## Classes
-- tu create a child class in js use class ** childname extends parentname **.
+- tu create a child class in js use class **childname extends parentname**.
 - In the constructor use super(arguments).
