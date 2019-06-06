@@ -37,9 +37,4 @@ babel inpFileName --out-file=OutputFileName --presets=env,react --watch
 5. Start again at 3.
 
 ## PROPS and STATE
-[in image](https://postimg.cc/Lqk5h9nJ)
-- Both are an object.
-- both can be used when rendering.
-- changes can cause re-renders in both.
-- Props comes from above while state defined in component itself.
-- Can't be changed by component itself.
+![props](https://user-images.githubusercontent.com/42304018/59069529-0aac8200-88d5-11e9-9053-621e6623c9e2.jpeg)
