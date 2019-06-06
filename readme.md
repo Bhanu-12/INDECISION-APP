@@ -37,7 +37,7 @@ babel inpFileName --out-file=OutputFileName --presets=env,react --watch
 5. Start again at 3.
 
 ## PROPS and STATE
-[](https://postimg.cc/Lqk5h9nJ)
+[in image](https://postimg.cc/Lqk5h9nJ)
 - Both are an object.
 - both can be used when rendering.
 - changes can cause re-renders in both.
