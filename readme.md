@@ -35,5 +35,3 @@ babel inpFileName --out-file=OutputFileName --presets=env,react --watch
 3. Change state based on event
 4. Component re-rendered using new state values.
 5. Start again at 3.
-
-## PROPS and STATE
