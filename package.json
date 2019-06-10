@@ -19,8 +19,8 @@
   "homepage": "https://github.com/Bhanu-12/INDECISION-APP#readme",
   "dependencies": {
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.6",
+    "babel-core": "6.25.0",
+    "babel-loader": "7.1.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "react": "^16.8.6",
