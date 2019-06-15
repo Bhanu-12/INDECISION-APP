@@ -7,6 +7,7 @@ const Action = props => {
         className="big-button"
         onClick={props.handleChoice}
         disabled={props.hasOptions}
+        autoFocus
       >
         What should I do?
       </button>

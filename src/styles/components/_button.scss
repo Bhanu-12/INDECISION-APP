@@ -9,6 +9,33 @@
   margin-bottom: $m-size;
   padding: 2.4rem;
   width: 100%;
+  border-radius: 1rem;
+  margin-bottom: $l-size;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.4);
+  border-bottom: $m-size solid darken($purple, 5%);
+
+  &:hover {
+    transform: translateY(-0.6rem);
+    box-shadow: 7px 13px 16px rgba(0, 0, 0, 0.35);
+  }
+
+  &:active {
+    transform: translateY(0.6rem);
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    background-color: lighten($purple, 5%);
+    box-shadow: none;
+    border: none;
+
+    &:hover {
+      transform: none;
+      box-shadow: none;
+    }
+  }
 }
 
 .big-button:disabled {
@@ -29,6 +56,7 @@
   color: white;
   font-weight: 500;
   padding: $s-size;
+  
 }
 
 .button--link {

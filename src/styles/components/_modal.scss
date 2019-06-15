@@ -6,7 +6,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  transition: opacity 200ms ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .ReactModalPortal .ReactModal__Overlay--after-open {
@@ -15,6 +15,7 @@
 
 .ReactModalPortal .ReactModal__Overlay--before-close {
   opacity: 0;
+  transition: all 0.2s ease-in-out;
 }
 
 .modal {
@@ -24,10 +25,14 @@
   outline: none;
   padding: $l-size;
   text-align: center;
+  border-radius: 1rem;
+  box-shadow: 8px 9px 9px rgba(0, 0, 0, 0.34);
 }
 
 .modal__title {
   margin: 0 0 $m-size 0;
+  font-size: 2rem;
+  margin-bottom: $m-size;
 }
 
 .modal__body {
