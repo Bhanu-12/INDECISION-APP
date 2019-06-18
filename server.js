@@ -3,7 +3,7 @@ const express =require("express");
 const app = express();
 const publicPath = path.join(__dirname, "..", "public");
 const port = process.env.PORT || 3000;
-const numeral = require("num")
+
 app.use(express.static(publicPath));
 
 app.get("*", (req, res) => {
