@@ -1,6 +1,6 @@
 # INDECISION APP
 
-Unable to decide what to do. Put your life decisions in the hands of a computer.
+Unable to decide what to do. Put your life decisions in the hands of a computer. [Try this app](https://decider-webapp.herokuapp.com).
 
 # DEMO
 
