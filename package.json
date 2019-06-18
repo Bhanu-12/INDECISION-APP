@@ -5,10 +5,12 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server",
-    "build": "webpack --config=webpack.config.js",
-    "build:prod": "webpack --config=webpack.production.config.js -p",
-    "build:watch": "npm run build -- --watch"
+    "start": "node server/server.js",
+    "build": "webpack  --watch",
+    "build:prod": "webpack -p --env production",
+    "heroku-postbuild": "npm run build:prod",
+    "build:watch": "npm run build -- --watch",
+    "dev-server": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -19,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/Bhanu-12/INDECISION-APP/issues"
   },
-  "homepage": "https://github.com/Bhanu-12/INDECISION-APP#readme",
+  "homepage": "https://Bhanu-12.github.io/INDECISION-APP",
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "6.25.0",
@@ -28,8 +30,10 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "create-react-app": "^3.0.1",
+    "express": "^4.17.1",
     "node-sass": "^4.12.0",
     "normalize.css": "^7.0.0",
+    "numerical": "^0.2.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-modal": "^3.8.1",
@@ -39,10 +43,11 @@
   },
   "devDependencies": {
     "css-loader": "^3.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "sass-loader": "6.0.6",
     "style-loader": "0.18.2",
     "uglifyjs-webpack-plugin": "^2.1.3",
-    "webpack": "^4.34.0",
+    "webpack": "^4.33.0",
     "webpack-cli": "^3.3.3"
   }
 }
