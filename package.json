@@ -30,7 +30,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "create-react-app": "^3.0.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "node-sass": "^4.12.0",
     "normalize.css": "^7.0.0",
     "numerical": "^0.2.4",
